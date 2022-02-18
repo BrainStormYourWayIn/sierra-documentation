@@ -26,7 +26,7 @@
     </div>
     <p>Contents:</p>
     <ul id="pagelinks">
-        <li><a href="py_out.html" target='_blank' rel="noopener noreferrer">Opening tags, Creating custom functions for you own, and controlling their behavior</a></li>
+        <li><a href="#tags" rel="noopener noreferrer">Opening tags, Creating custom functions for you own, and controlling their behavior</a></li>
         <li><a href="#css-ing" rel="noopener noreferrer">Using CSS</a></li>
         <li><a href="#tTags" rel="noopener noreferrer">Working with div, section and p tags</a></li>
         <li><a href="#add_img" rel="noopener noreferrer">Adding images</a></li>
@@ -34,6 +34,7 @@
         <li><a href="#bullets_and_lists" rel="noopener noreferrer">Bulleted lists (ordered and unordered)</a></li>
         <li><a href="#des_lists" rel="noopener noreferrer">Adding a description list</a></li>
         <li><a href="#other_funcs" rel="noopener noreferrer">Other functions (add Bootstrap, script, escaping and more)</a></li>
+        <li><a href="py_out.html" target='_blank' rel="noopener noreferrer">Working with Python Loops, Functions, Variables, Conditions and others</a></li>
     </ul>
     <p>Let's get started</p>
     <div id="starting_off">
@@ -121,14 +122,16 @@ meta(name="viewport", content="width=device-width", initial_scale=1.0)</code></p
         <p>This is equivalent to:</p>
         <pre class="line-numbers"><code class="language-html">&lt;meta name="description" content="This is some description"&gt;
 &lt;meta name="viewport" content="width=device-width" initial-scale=1.0&gt;</code></pre>
-        <p>Using argument <code>text</code> makes the tag close after the opening of the tag</p>
+        <p>Using argument <code>text</code> makes the tag close after the opening of the tag. Remember that <code>__</code> is the equivalent of a single underscore and <code>_<code>
+            is the equivalent of a hyphen!</p>
         <pre class="line-numbers"><code class="language-py">@tag
 def script(**kwargs):
     pass
 
 script(__async="", src="some_src", text="")            
 # You can get any text to appear within the tag. 
-# Not using 'text' creates a tag similar to the &lt;meta&gt; tag</code></pre>
+# Not using 'text' creates a tag similar to the &lt;meta&gt; tag
+# This is the equivalent of &lt;script _async= src=some-src test=&gt;&lt;/script&gt;</code></pre>
     </div>
     <hr>
 
