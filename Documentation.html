@@ -5,7 +5,7 @@
     <meta name="description" content="Sierra - A Python micro templating engine for web frameworks">
     <meta name="keywords" content="html, css, js, jinja, django, python, web framework, templating">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation | Sierra - 2.0.0</title>
+    <title>Documentation | Sierra - 2.4.0</title>
     <link rel="apple-touch-icon" href="./img/sierra.png">
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/prism.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <a href="https://github.com/BrainStormYourWayIn/sierra"><img src="./img/sierra.png" height="137" width="362" alt="Sierra logo"/></a>
-    <h1>Documentation - Sierra v2.0.0</h1>
+    <h1>Documentation - Sierra v2.4.0</h1>
     <div id="first_up">
         <p>
             Wecome to the documentation of Sierra - <b>Sierra is a Python library to write HTML and CSS in pure Python using the DOM API in a simple yet elegant manner.</b> 
@@ -122,7 +122,8 @@ meta(name="viewport", content="width=device-width", initial_scale=1.0)</code></p
         <p>This is equivalent to:</p>
         <pre class="line-numbers"><code class="language-html">&lt;meta name="description" content="This is some description"&gt;
 &lt;meta name="viewport" content="width=device-width" initial-scale=1.0&gt;</code></pre>
-        <p>Using argument <code>text</code> makes the tag close after the opening of the tag. Remember that <code>__</code> is the equivalent of a single underscore and <code>_<code>
+        <p><b>Using argument <code>text=""</code> makes the tag close after the opening of the tag</b>, causing it to behave differently than tags like meta, which don't need 
+            a closing. Remember that <code>__</code> is the equivalent of a single underscore and <code>_<code>
             is the equivalent of a hyphen!</p>
         <pre class="line-numbers"><code class="language-py">@tag
 def script(**kwargs):
@@ -131,7 +132,7 @@ def script(**kwargs):
 script(__async="", src="some_src", text="")            
 # You can get any text to appear within the tag. 
 # Not using 'text' creates a tag similar to the &lt;meta&gt; tag
-# This is the equivalent of &lt;script _async= src=some-src test=&gt;&lt;/script&gt;</code></pre>
+# This is the equivalent of &lt;script _async= src=some-src&gt;&lt;/script&gt;</code></pre>
     </div>
     <hr>
 
